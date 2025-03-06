@@ -1,0 +1,1646 @@
+[
+  {
+    "year": 2020,
+    "month": "Janvier",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 857
+      },
+      {
+        "week": 2,
+        "value": 1077
+      },
+      {
+        "week": 3,
+        "value": 1045
+      },
+      {
+        "week": 4,
+        "value": 1195
+      },
+      {
+        "week": 5,
+        "value": 1105
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Février",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1074
+      },
+      {
+        "week": 2,
+        "value": 1138
+      },
+      {
+        "week": 3,
+        "value": 1002
+      },
+      {
+        "week": 4,
+        "value": 1081
+      },
+      {
+        "week": 5,
+        "value": 382
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Mars",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1004
+      },
+      {
+        "week": 2,
+        "value": 1156
+      },
+      {
+        "week": 3,
+        "value": 838
+      },
+      {
+        "week": 4,
+        "value": 922
+      },
+      {
+        "week": 5,
+        "value": 1151
+      },
+      {
+        "week": 6,
+        "value": -665
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Avril",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 977
+      },
+      {
+        "week": 2,
+        "value": 824
+      },
+      {
+        "week": 3,
+        "value": 800
+      },
+      {
+        "week": 4,
+        "value": 876
+      },
+      {
+        "week": 5,
+        "value": 1720
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Mai",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1103
+      },
+      {
+        "week": 2,
+        "value": 889
+      },
+      {
+        "week": 3,
+        "value": 1098
+      },
+      {
+        "week": 4,
+        "value": 961
+      },
+      {
+        "week": 5,
+        "value": 1013
+      },
+      {
+        "week": 6,
+        "value": -138
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Juin",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1079
+      },
+      {
+        "week": 2,
+        "value": 1038
+      },
+      {
+        "week": 3,
+        "value": 1102
+      },
+      {
+        "week": 4,
+        "value": 980
+      },
+      {
+        "week": 5,
+        "value": 1110
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Juillet",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1002
+      },
+      {
+        "week": 2,
+        "value": 972
+      },
+      {
+        "week": 3,
+        "value": 958
+      },
+      {
+        "week": 4,
+        "value": 848
+      },
+      {
+        "week": 5,
+        "value": 929
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Août",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 891
+      },
+      {
+        "week": 2,
+        "value": 1141
+      },
+      {
+        "week": 3,
+        "value": 997
+      },
+      {
+        "week": 4,
+        "value": 884
+      },
+      {
+        "week": 5,
+        "value": 986
+      },
+      {
+        "week": 6,
+        "value": 118
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Septembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 990
+      },
+      {
+        "week": 2,
+        "value": 958
+      },
+      {
+        "week": 3,
+        "value": 940
+      },
+      {
+        "week": 4,
+        "value": 1149
+      },
+      {
+        "week": 5,
+        "value": 902
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Octobre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1102
+      },
+      {
+        "week": 2,
+        "value": 1150
+      },
+      {
+        "week": 3,
+        "value": 995
+      },
+      {
+        "week": 4,
+        "value": 855
+      },
+      {
+        "week": 5,
+        "value": -78
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Novembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 843
+      },
+      {
+        "week": 2,
+        "value": 875
+      },
+      {
+        "week": 3,
+        "value": 838
+      },
+      {
+        "week": 4,
+        "value": 955
+      },
+      {
+        "week": 5,
+        "value": 955
+      },
+      {
+        "week": 6,
+        "value": 210
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "month": "Décembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 871
+      },
+      {
+        "week": 2,
+        "value": 869
+      },
+      {
+        "week": 3,
+        "value": 878
+      },
+      {
+        "week": 4,
+        "value": 851
+      },
+      {
+        "week": 5,
+        "value": 1071
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Janvier",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1162
+      },
+      {
+        "week": 2,
+        "value": 932
+      },
+      {
+        "week": 3,
+        "value": 1196
+      },
+      {
+        "week": 4,
+        "value": 884
+      },
+      {
+        "week": 5,
+        "value": 1074
+      },
+      {
+        "week": 6,
+        "value": -755
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Février",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 957
+      },
+      {
+        "week": 2,
+        "value": 864
+      },
+      {
+        "week": 3,
+        "value": 996
+      },
+      {
+        "week": 4,
+        "value": 840
+      },
+      {
+        "week": 5,
+        "value": 361
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Mars",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1067
+      },
+      {
+        "week": 2,
+        "value": 957
+      },
+      {
+        "week": 3,
+        "value": 1019
+      },
+      {
+        "week": 4,
+        "value": 1073
+      },
+      {
+        "week": 5,
+        "value": 227
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Avril",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 822
+      },
+      {
+        "week": 2,
+        "value": 853
+      },
+      {
+        "week": 3,
+        "value": 1127
+      },
+      {
+        "week": 4,
+        "value": 1055
+      },
+      {
+        "week": 5,
+        "value": 564
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Mai",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 904
+      },
+      {
+        "week": 2,
+        "value": 921
+      },
+      {
+        "week": 3,
+        "value": 1126
+      },
+      {
+        "week": 4,
+        "value": 1101
+      },
+      {
+        "week": 5,
+        "value": 837
+      },
+      {
+        "week": 6,
+        "value": -270
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Juin",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 939
+      },
+      {
+        "week": 2,
+        "value": 1094
+      },
+      {
+        "week": 3,
+        "value": 854
+      },
+      {
+        "week": 4,
+        "value": 1126
+      },
+      {
+        "week": 5,
+        "value": 606
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Juillet",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1008
+      },
+      {
+        "week": 2,
+        "value": 1091
+      },
+      {
+        "week": 3,
+        "value": 1166
+      },
+      {
+        "week": 4,
+        "value": 1086
+      },
+      {
+        "week": 5,
+        "value": -214
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Août",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1080
+      },
+      {
+        "week": 2,
+        "value": 1096
+      },
+      {
+        "week": 3,
+        "value": 832
+      },
+      {
+        "week": 4,
+        "value": 998
+      },
+      {
+        "week": 5,
+        "value": 1067
+      },
+      {
+        "week": 6,
+        "value": -861
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Septembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1057
+      },
+      {
+        "week": 2,
+        "value": 1093
+      },
+      {
+        "week": 3,
+        "value": 961
+      },
+      {
+        "week": 4,
+        "value": 1091
+      },
+      {
+        "week": 5,
+        "value": 201
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Octobre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1032
+      },
+      {
+        "week": 2,
+        "value": 822
+      },
+      {
+        "week": 3,
+        "value": 980
+      },
+      {
+        "week": 4,
+        "value": 1131
+      },
+      {
+        "week": 5,
+        "value": 812
+      },
+      {
+        "week": 6,
+        "value": -629
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Novembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1000
+      },
+      {
+        "week": 2,
+        "value": 1003
+      },
+      {
+        "week": 3,
+        "value": 904
+      },
+      {
+        "week": 4,
+        "value": 900
+      },
+      {
+        "week": 5,
+        "value": 1031
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "month": "Décembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1019
+      },
+      {
+        "week": 2,
+        "value": 1110
+      },
+      {
+        "week": 3,
+        "value": 851
+      },
+      {
+        "week": 4,
+        "value": 936
+      },
+      {
+        "week": 5,
+        "value": 531
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Janvier",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 917
+      },
+      {
+        "week": 2,
+        "value": 819
+      },
+      {
+        "week": 3,
+        "value": 826
+      },
+      {
+        "week": 4,
+        "value": 1007
+      },
+      {
+        "week": 5,
+        "value": 909
+      },
+      {
+        "week": 6,
+        "value": 132
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Février",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 812
+      },
+      {
+        "week": 2,
+        "value": 940
+      },
+      {
+        "week": 3,
+        "value": 1197
+      },
+      {
+        "week": 4,
+        "value": 883
+      },
+      {
+        "week": 5,
+        "value": 504
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Mars",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1012
+      },
+      {
+        "week": 2,
+        "value": 1063
+      },
+      {
+        "week": 3,
+        "value": 1176
+      },
+      {
+        "week": 4,
+        "value": 964
+      },
+      {
+        "week": 5,
+        "value": 709
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Avril",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 855
+      },
+      {
+        "week": 2,
+        "value": 967
+      },
+      {
+        "week": 3,
+        "value": 899
+      },
+      {
+        "week": 4,
+        "value": 999
+      },
+      {
+        "week": 5,
+        "value": 611
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Mai",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1140
+      },
+      {
+        "week": 2,
+        "value": 1136
+      },
+      {
+        "week": 3,
+        "value": 814
+      },
+      {
+        "week": 4,
+        "value": 864
+      },
+      {
+        "week": 5,
+        "value": 949
+      },
+      {
+        "week": 6,
+        "value": -443
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Juin",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 919
+      },
+      {
+        "week": 2,
+        "value": 997
+      },
+      {
+        "week": 3,
+        "value": 1191
+      },
+      {
+        "week": 4,
+        "value": 1068
+      },
+      {
+        "week": 5,
+        "value": 949
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Juillet",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 894
+      },
+      {
+        "week": 2,
+        "value": 1177
+      },
+      {
+        "week": 3,
+        "value": 899
+      },
+      {
+        "week": 4,
+        "value": 861
+      },
+      {
+        "week": 5,
+        "value": 886
+      },
+      {
+        "week": 6,
+        "value": 54
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Août",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1179
+      },
+      {
+        "week": 2,
+        "value": 1045
+      },
+      {
+        "week": 3,
+        "value": 1018
+      },
+      {
+        "week": 4,
+        "value": 1078
+      },
+      {
+        "week": 5,
+        "value": 842
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Septembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 992
+      },
+      {
+        "week": 2,
+        "value": 898
+      },
+      {
+        "week": 3,
+        "value": 1189
+      },
+      {
+        "week": 4,
+        "value": 928
+      },
+      {
+        "week": 5,
+        "value": 765
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Octobre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1171
+      },
+      {
+        "week": 2,
+        "value": 850
+      },
+      {
+        "week": 3,
+        "value": 939
+      },
+      {
+        "week": 4,
+        "value": 1038
+      },
+      {
+        "week": 5,
+        "value": 847
+      },
+      {
+        "week": 6,
+        "value": 411
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Novembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1076
+      },
+      {
+        "week": 2,
+        "value": 925
+      },
+      {
+        "week": 3,
+        "value": 916
+      },
+      {
+        "week": 4,
+        "value": 1073
+      },
+      {
+        "week": 5,
+        "value": 941
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "month": "Décembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 920
+      },
+      {
+        "week": 2,
+        "value": 804
+      },
+      {
+        "week": 3,
+        "value": 843
+      },
+      {
+        "week": 4,
+        "value": 1160
+      },
+      {
+        "week": 5,
+        "value": 564
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Janvier",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 936
+      },
+      {
+        "week": 2,
+        "value": 911
+      },
+      {
+        "week": 3,
+        "value": 1103
+      },
+      {
+        "week": 4,
+        "value": 1133
+      },
+      {
+        "week": 5,
+        "value": 941
+      },
+      {
+        "week": 6,
+        "value": 126
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Février",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 843
+      },
+      {
+        "week": 2,
+        "value": 913
+      },
+      {
+        "week": 3,
+        "value": 844
+      },
+      {
+        "week": 4,
+        "value": 843
+      },
+      {
+        "week": 5,
+        "value": 942
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Mars",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1124
+      },
+      {
+        "week": 2,
+        "value": 1160
+      },
+      {
+        "week": 3,
+        "value": 884
+      },
+      {
+        "week": 4,
+        "value": 1169
+      },
+      {
+        "week": 5,
+        "value": 143
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Avril",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 951
+      },
+      {
+        "week": 2,
+        "value": 1055
+      },
+      {
+        "week": 3,
+        "value": 1169
+      },
+      {
+        "week": 4,
+        "value": 984
+      },
+      {
+        "week": 5,
+        "value": 1142
+      },
+      {
+        "week": 6,
+        "value": -1294
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Mai",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 966
+      },
+      {
+        "week": 2,
+        "value": 987
+      },
+      {
+        "week": 3,
+        "value": 1125
+      },
+      {
+        "week": 4,
+        "value": 1187
+      },
+      {
+        "week": 5,
+        "value": 6
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Juin",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 943
+      },
+      {
+        "week": 2,
+        "value": 948
+      },
+      {
+        "week": 3,
+        "value": 993
+      },
+      {
+        "week": 4,
+        "value": 959
+      },
+      {
+        "week": 5,
+        "value": 1533
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Juillet",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1161
+      },
+      {
+        "week": 2,
+        "value": 1143
+      },
+      {
+        "week": 3,
+        "value": 1023
+      },
+      {
+        "week": 4,
+        "value": 1166
+      },
+      {
+        "week": 5,
+        "value": 933
+      },
+      {
+        "week": 6,
+        "value": 5
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Août",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1138
+      },
+      {
+        "week": 2,
+        "value": 983
+      },
+      {
+        "week": 3,
+        "value": 1142
+      },
+      {
+        "week": 4,
+        "value": 863
+      },
+      {
+        "week": 5,
+        "value": 619
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Septembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 958
+      },
+      {
+        "week": 2,
+        "value": 1023
+      },
+      {
+        "week": 3,
+        "value": 908
+      },
+      {
+        "week": 4,
+        "value": 977
+      },
+      {
+        "week": 5,
+        "value": 1545
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Octobre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 831
+      },
+      {
+        "week": 2,
+        "value": 1013
+      },
+      {
+        "week": 3,
+        "value": 937
+      },
+      {
+        "week": 4,
+        "value": 1188
+      },
+      {
+        "week": 5,
+        "value": 901
+      },
+      {
+        "week": 6,
+        "value": 529
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Novembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 963
+      },
+      {
+        "week": 2,
+        "value": 1070
+      },
+      {
+        "week": 3,
+        "value": 1137
+      },
+      {
+        "week": 4,
+        "value": 905
+      },
+      {
+        "week": 5,
+        "value": 432
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "month": "Décembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1024
+      },
+      {
+        "week": 2,
+        "value": 1035
+      },
+      {
+        "week": 3,
+        "value": 974
+      },
+      {
+        "week": 4,
+        "value": 1130
+      },
+      {
+        "week": 5,
+        "value": 1003
+      },
+      {
+        "week": 6,
+        "value": 46
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Janvier",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 824
+      },
+      {
+        "week": 2,
+        "value": 1162
+      },
+      {
+        "week": 3,
+        "value": 992
+      },
+      {
+        "week": 4,
+        "value": 1027
+      },
+      {
+        "week": 5,
+        "value": 359
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Février",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1121
+      },
+      {
+        "week": 2,
+        "value": 1023
+      },
+      {
+        "week": 3,
+        "value": 810
+      },
+      {
+        "week": 4,
+        "value": 1098
+      },
+      {
+        "week": 5,
+        "value": 1054
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Mars",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1051
+      },
+      {
+        "week": 2,
+        "value": 1146
+      },
+      {
+        "week": 3,
+        "value": 900
+      },
+      {
+        "week": 4,
+        "value": 907
+      },
+      {
+        "week": 5,
+        "value": 862
+      },
+      {
+        "week": 6,
+        "value": -664
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Avril",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 865
+      },
+      {
+        "week": 2,
+        "value": 1077
+      },
+      {
+        "week": 3,
+        "value": 1097
+      },
+      {
+        "week": 4,
+        "value": 1077
+      },
+      {
+        "week": 5,
+        "value": 219
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Mai",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1076
+      },
+      {
+        "week": 2,
+        "value": 826
+      },
+      {
+        "week": 3,
+        "value": 1006
+      },
+      {
+        "week": 4,
+        "value": 914
+      },
+      {
+        "week": 5,
+        "value": 1005
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Juin",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 835
+      },
+      {
+        "week": 2,
+        "value": 983
+      },
+      {
+        "week": 3,
+        "value": 904
+      },
+      {
+        "week": 4,
+        "value": 879
+      },
+      {
+        "week": 5,
+        "value": 841
+      },
+      {
+        "week": 6,
+        "value": -328
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Juillet",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 887
+      },
+      {
+        "week": 2,
+        "value": 1037
+      },
+      {
+        "week": 3,
+        "value": 1045
+      },
+      {
+        "week": 4,
+        "value": 970
+      },
+      {
+        "week": 5,
+        "value": 1430
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Août",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1132
+      },
+      {
+        "week": 2,
+        "value": 1013
+      },
+      {
+        "week": 3,
+        "value": 867
+      },
+      {
+        "week": 4,
+        "value": 1039
+      },
+      {
+        "week": 5,
+        "value": 283
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Septembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 913
+      },
+      {
+        "week": 2,
+        "value": 1165
+      },
+      {
+        "week": 3,
+        "value": 1179
+      },
+      {
+        "week": 4,
+        "value": 1147
+      },
+      {
+        "week": 5,
+        "value": 1025
+      },
+      {
+        "week": 6,
+        "value": 38
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Octobre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 961
+      },
+      {
+        "week": 2,
+        "value": 871
+      },
+      {
+        "week": 3,
+        "value": 1056
+      },
+      {
+        "week": 4,
+        "value": 997
+      },
+      {
+        "week": 5,
+        "value": 1539
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Novembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 1019
+      },
+      {
+        "week": 2,
+        "value": 909
+      },
+      {
+        "week": 3,
+        "value": 1008
+      },
+      {
+        "week": 4,
+        "value": 815
+      },
+      {
+        "week": 5,
+        "value": 1401
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": "Décembre",
+    "weeks": [
+      {
+        "week": 1,
+        "value": 887
+      },
+      {
+        "week": 2,
+        "value": 1086
+      },
+      {
+        "week": 3,
+        "value": 1193
+      },
+      {
+        "week": 4,
+        "value": 819
+      },
+      {
+        "week": 5,
+        "value": 1059
+      },
+      {
+        "week": 6,
+        "value": -468
+      }
+    ]
+  }
+]
