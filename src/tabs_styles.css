@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* .p-datatable {
+  border-collapse: separate;
+}
+
+.p-datatable td,
+.p-datatable th {
+  border: 1px solid #4a4a4a; /* Couleur de la bordure */
+ */
+
+/* Style général du fond de la table */
+.custom-datatable {
+  background-color: #0b1739;
+}
+
+.custom-header {
+  background-color: #0b1739;
+  color: #00c2ff;
+  border: 1px solid #4a4a4a; /* Gris foncé */
+  text-align: center;
+}
+
+/* Style pour les sous-en-têtes */
+.custom-subheader {
+  background-color: #081028;
+  /* Couleur de fond personnalisée */
+  color: #ffffff;
+  /* Couleur du texte en blanc */
+  font-weight: bold;
+  font-size: large;
+  /* Texte en gras */
+}
+
+/* Style for the group footers */
+.custom-group-footer {
+  background-color: #0b1739; /* Custom background color */
+  color: #ffffff;           /* Text color */
+}
+
+/* Style pour les lignes impaires */
+.custom-datatable .p-datatable-tbody>tr:nth-child(odd) {
+  background-color: #0b1739;
+  color: #ffffff;
+  /* Couleur du texte en blanc pour contraste */
+}
+
+/* Style pour les lignes paires */
+.custom-datatable .p-datatable-tbody>tr:nth-child(even) {
+  background-color: #0b1739;
+  color: #ffffff;
+  /* Couleur du texte en blanc pour contraste */
+}
+
+
+/* Style de l'en-tête */
+.custom-datatable .p-datatable-thead>tr>th {
+  background-color: #081028;
+  color: #ffffff;
+  /* Couleur du texte en blanc pour contraste */
+}
+
+/* Style de la première colonne */
+.custom-datatable .p-datatable-tbody>tr>td:first-child,
+.custom-datatable .p-datatable-thead>tr>th:first-child {
+  background-color: #081028;
+  color: #ffffff;
+  /* Couleur du texte en blanc pour contraste */
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+/* Ajustement pour la bordure entre la première colonne et les autres */
+/* .custom-datatable .p-datatable-tbody>tr>td:first-child {
+  border-right: 1px solid #aeb9e1;
+  background-color: #0b1739;
+} */
