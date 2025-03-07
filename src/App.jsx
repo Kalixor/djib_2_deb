@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { PeriodProvider } from './context/PeriodContext'
+import { PreloadedDataProvider } from './context/preLoadContext';
 import Dashboard from './components/Dashboard'
 import Navbar from './components/Navbar'
 
@@ -12,12 +13,14 @@ function App() {
   const [activePage, setActivePage] = useState('home')
 
   return (
-    <PeriodProvider>
-      <div className="min-h-screen bg-brand-800 text-white">
-        <Navbar onPageChange={setActivePage} />
-        {activePage === 'home' && <Dashboard filters={filters} setFilters={setFilters} />}
-      </div>
-    </PeriodProvider>
+    <PreloadedDataProvider>
+       <PeriodProvider>
+        <div className="min-h-screen bg-brand-800 text-white">
+          <Navbar onPageChange={setActivePage} />
+          {activePage === 'home' && <Dashboard filters={filters} setFilters={setFilters} />}
+        </div>
+      </PeriodProvider>
+    </PreloadedDataProvider>
   )
 }
 

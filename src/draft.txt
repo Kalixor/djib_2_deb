@@ -1,0 +1,35 @@
+<div>
+        {/* Affichage du chargement */}
+        {loading && <p>Chargement...</p>}
+
+        {/* Affichage des erreurs */}
+        {error && <p style={{ color: 'red' }}>Erreur : {error}</p>}
+        
+        {/* Affichage des données */}
+        {!loading && !error && ( 
+        <div>
+          <h2>Revenus par Année</h2>
+          <ul>
+             {preloadedData.totPerWeek.length > 0 ? (
+              preloadedData.totPerWeek.map((item, index) => <li key={item.id || index}>{item.name || JSON.stringify(item)}</li>)
+            ) : (
+              <p>Aucune donnée trouvée</p>
+            )}
+          </ul>
+
+          <h2>Taxes</h2>
+          <ul>
+             {preloadedData.totPerDay.length > 0 ? (
+              preloadedData.totPerDay.map((item, index) => <li key={item.id || index}>{item.name || JSON.stringify(item)}</li>)
+            ) : (
+              <p>Aucune donnée trouvée</p>
+            )}
+          </ul>
+        </div>)}
+      </div>
+      
+
+      {/* <div>
+        <h1>Affichage des résultats SQL</h1>
+        <DataComponentApi query="query" params={{ sql: sqlQuery }} />
+      </div> */}

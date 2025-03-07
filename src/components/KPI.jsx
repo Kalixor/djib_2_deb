@@ -1,5 +1,31 @@
-import React, { useEffect, useRef, useState, useCallback } from 'react'
+import React, { useEffect, useRef, useState, useCallback, useContext } from 'react'
 import { usePeriod } from '../context/PeriodContext'
+import { PreloadedDataContext } from '../context/preLoadContext';
+
+import { 
+  ClipLoader, 
+  BeatLoader, 
+  BounceLoader, 
+  CircleLoader, 
+  ClockLoader, 
+  DotLoader, 
+  FadeLoader, 
+  GridLoader, 
+  HashLoader, 
+  MoonLoader, 
+  PacmanLoader, 
+  PropagateLoader, 
+  PuffLoader, 
+  RingLoader, 
+  RiseLoader, 
+  RotateLoader, 
+  ScaleLoader, 
+  SkewLoader, 
+  SquareLoader, 
+  SyncLoader 
+} from "react-spinners";
+
+
 
 const KPI = ({ title, isActive, onClick, style }) => {
   const { period } = usePeriod()
@@ -10,6 +36,33 @@ const KPI = ({ title, isActive, onClick, style }) => {
   const animationRef = useRef(null)
   const startTimeRef = useRef(null)
 
+  const { preloadedData, loading, error } = useContext(PreloadedDataContext);
+
+  const querriesPeriod = {
+    'Journalières': 'totPerDay',
+    'Hebdomadaires': 'totPerWeek',
+    'Mensuelles': 'totPerMonth',
+    'Annuelles': 'totPerYear'
+  }
+
+  const titleField = {
+    'Recettes Totales': 'TotalPaidValue',
+    'Recettes Prévues': 'TotalAssessedValue',
+    'Bureaux': '',
+    'Paiements': ''
+  }
+
+  const currentYear = new Date().getFullYear(); 
+
+  const currentDay = new Date().toISOString().split('T')[0];
+  // Output : "2024-03-02"
+
+  const today = new Date();
+  today.setFullYear(today.getFullYear() - 1); // Soustraire 1 an
+
+  const lastYearDate = today.toISOString().split('T')[0];
+
+ 
   const getIcon = useCallback(() => {
     switch(title) {
       case 'Paiements': return 'fas fa-cash-register'
@@ -20,14 +73,17 @@ const KPI = ({ title, isActive, onClick, style }) => {
     }
   }, [title])
 
-  const getKpiData = useCallback(() => {
+  const getKpiData = useCallback((value) => {
+    
     const baseValues = {
       'Paiements': { value: 12520000000, suffix: '', trend: 'up' },
       'Recettes Prévues': { value: 8200000, suffix: '', trend: 'down' },
       'Bureaux': { value: 1200, suffix: '', trend: 'up' },
-      'Recettes Totales': { value: 20700000, suffix: '', trend: 'up' }
+      'Recettes Totales': { value: value, suffix: '', trend: 'up' }
     }
 
+    // baseValues[title].value = PreloadedDataContext[querriesByPeriod[period]]
+    
     const periodFactors = {
       'Journalières': 1,
       'Hebdomadaires': 7,
@@ -35,33 +91,47 @@ const KPI = ({ title, isActive, onClick, style }) => {
       'Annuelles': 365
     }
 
-    const factor = periodFactors[period] || 1
-    const variation = Math.random() * 0.05
-    const baseValue = baseValues[title].value * factor
-    const variationAmount = baseValue * variation
+    // const factor = periodFactors[period] || 1
+
+    const variation = Math.random() * 0.15
+    //const baseValue = baseValues[title].value * factor
+     const variationAmount = variation
 
     return {
       ...baseValues[title],
-      value: Math.round(baseValue * (1 + variation)),
+      value: baseValues[title].value,
       variationAmount: Math.round(variationAmount)
     }
-  }, [period, title])
+  }, [loading, preloadedData, period])
 
   useEffect(() => {
-    const { value, variationAmount } = getKpiData()
-    targetValue.current = value
-    setVariationAmount(variationAmount)
-    setVariationValue(Math.round((variationAmount / (value - variationAmount)) * 100))
-    startTimeRef.current = null
-    setDisplayValue('0')
-    animationRef.current = requestAnimationFrame(animateValue)
+    if (!loading && preloadedData[querriesPeriod[period]] && period) {
+
+      const value = preloadedData[querriesPeriod[period]]
+                    .find(item => item.Year == currentYear)
+                    ['TotalPaidValue']
+      
+      const prevValue = preloadedData[querriesPeriod['Journalières']]
+                   .find(item => item.Day == lastYearDate)
+                   ['TotalPaidValue']
+
+    
+      const varAmount = value - prevValue
+
+      targetValue.current = value
+      setVariationAmount(varAmount)
+      setVariationValue(Math.round((varAmount / (value - varAmount)) * 100))
+      startTimeRef.current = null
+      setDisplayValue('0')
+      animationRef.current = requestAnimationFrame(animateValue)
+    }
     
     return () => {
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current)
       }
     }
-  }, [getKpiData])
+  }, [loading, preloadedData, period])
 
   const animateValue = useCallback((timestamp) => {
     if (!startTimeRef.current) startTimeRef.current = timestamp
@@ -81,8 +151,8 @@ const KPI = ({ title, isActive, onClick, style }) => {
   const easeOutQuad = useCallback((t) => t * (2 - t), [])
 
   const renderVariationBadge = useCallback(() => {
-    const { trend } = getKpiData()
-    const isPositive = trend === 'up'
+    // const { trend } = getKpiData()
+    const isPositive = (variationAmount > 0)
     const arrowClass = isPositive 
       ? 'fas fa-arrow-up rotate-45' 
       : 'fas fa-arrow-down rotate-[-35deg]'
@@ -145,6 +215,12 @@ const KPI = ({ title, isActive, onClick, style }) => {
             {displayValue}
           </p>
         </div>
+
+         {loading && (
+          <div className="absolute -right-2 top-[70%] spinner-container">
+            <BeatLoader color="#00c2ff" size={15} />
+          </div>
+        )}
       </div>
     </div>
   )

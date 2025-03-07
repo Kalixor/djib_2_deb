@@ -15,7 +15,6 @@ function DataComponentApi({ query, params = {} }) {
     Object.keys(params).forEach(key => {
         url.searchParams.append(key, params[key]); // NE PAS réencoder ici !
     });
-    console.log('URL is : ', url.toString())
 
     return url.toString();
   }, [query, params]);

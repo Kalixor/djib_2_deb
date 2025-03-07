@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
 import BarChart from './charts/BarChart'
 import LineChart from './charts/LineChart'
@@ -10,38 +10,39 @@ import CustomDatePicker from './CustomDatePicker'
 import DataComponentApi from './DataComponentApi'
 import NotificationPopup from './NotificationPopup'
 import { usePeriod } from '../context/PeriodContext'
+import { PreloadedDataContext } from '../context/preLoadContext';
 
 const generateData = (period, bureauFilter = null, taxeFilter = null) => {
   const bureaux = ['Bureau A', 'Bureau B', 'Bureau C', 'Bureau D']
   const taxes = ['Taxe Import', 'Taxe Export', 'Taxe Transit', 'Droit Douane']
 
   const generateItem = (i) => {
-      const bureau = bureaux[Math.floor(Math.random() * bureaux.length)]
-      const taxe = taxes[Math.floor(Math.random() * taxes.length)]
+    const bureau = bureaux[Math.floor(Math.random() * bureaux.length)]
+    const taxe = taxes[Math.floor(Math.random() * taxes.length)]
 
-      if ((bureauFilter && bureau !== bureauFilter) || (taxeFilter && taxe !== taxeFilter)) {
-          return null
-      }
+    if ((bureauFilter && bureau !== bureauFilter) || (taxeFilter && taxe !== taxeFilter)) {
+      return null
+    }
 
-      return {
-          name: i,
-          value: Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000,
-          bureau,
-          taxe
-      }
+    return {
+      name: i,
+      value: Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000,
+      bureau,
+      taxe
+    }
   }
 
   switch (period) {
-      case 'Jour':
-          return Array.from({ length: 24 }, (_, i) => generateItem(i)).filter(Boolean)
-      case 'Sem':
-          return ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim'].map((day, i) => generateItem(day, i)).filter(Boolean)
-      case 'Mois':
-          return Array.from({ length: 30 }, (_, i) => generateItem(i + 1)).filter(Boolean)
-      case 'Année':
-          return ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'].map((month, i) => generateItem(month, i)).filter(Boolean)
-      default:
-          return []
+    case 'Jour':
+      return Array.from({ length: 24 }, (_, i) => generateItem(i)).filter(Boolean)
+    case 'Sem':
+      return ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim'].map((day, i) => generateItem(day, i)).filter(Boolean)
+    case 'Mois':
+      return Array.from({ length: 30 }, (_, i) => generateItem(i + 1)).filter(Boolean)
+    case 'Année':
+      return ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'].map((month, i) => generateItem(month, i)).filter(Boolean)
+    default:
+      return []
   }
 }
 
@@ -71,6 +72,9 @@ export default function Dashboard({ filters, setFilters }) {
   const [lineChartPeriod, setLineChartPeriod] = useState('Sem')
   const [lineChartData, setLineChartData] = useState(generateData('Sem'))
 
+  const { period } = usePeriod()
+
+  const { preloadedData, loading, error } = useContext(PreloadedDataContext);
 
   const handleDateChange = (type, date) => {
     const newStart = type === 'start' ? date : startDate
@@ -159,29 +163,10 @@ export default function Dashboard({ filters, setFilters }) {
 
   const handleLineChartPeriodChange = (newPeriod) => {
     if (newPeriod !== lineChartPeriod) {
-        setLineChartPeriod(newPeriod)
-        setLineChartData(generateData(newPeriod))
+      setLineChartPeriod(newPeriod)
+      setLineChartData(generateData(newPeriod))
     }
   }
-
-  // Définition des paramètres SQL dynamiques
-  const table = "df_offices_taxes"; // Table à utiliser
-  const column1 = "TotalPaidValue"; // Première colonne obligatoire
-  const column2 = "TotalAssessedValue"; // Seconde colonne optionnelle (null si non utilisée)
-  const period = "Period"; // Nom du champ période (ex: Year, Month, Week...)
-  const periodFormat = "%Y"; // Format de la période (ex: %Y, %Y-%m, %Y-%W...)
-
-  // Construction de la requête SQL dynamique
-  const sqlQuery = `
-    SELECT 
-      STRFTIME('${periodFormat}', CAST(Date AS DATE)) AS ${period},
-      SUM(${column1}) AS ${column1}
-      ${column2 ? `, SUM(${column2}) AS ${column2}` : ''} 
-    FROM ${table}
-    GROUP BY ${period}
-    ORDER BY ${period}
-  `;
-
 
   return (
     <main className="p-6">
@@ -223,7 +208,7 @@ export default function Dashboard({ filters, setFilters }) {
           style={{ gridRow: 'span 2' }}
         />
       </div>
-      
+
       {/* Evolution card */}
       <div className="flex gap-5 mb-6">
         <div className="w-[60%] bg-white dark:bg-card p-4 rounded-lg shadow border border-[#343b4f] relative">
@@ -280,39 +265,39 @@ export default function Dashboard({ filters, setFilters }) {
             />
           </div>
 
-           {/* LineChart pour la tendance hebdomadaire */}
-           <div className="relative mt-20">
-                <div className="flex items-start justify-between mb-2">
-                    <div className="flex flex-col gap-1">
-                        <div className="flex items-center gap-2">
-                            <i className="fas fa-chart-line text-sm text-gray-300 dark:text-card-text" />
-                            <h3 className="text-xs font-medium text-gray-500 dark:text-card-text">
-                                Paiements
-                            </h3>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <p className="text-lg font-semibold text-gray-900 dark:text-white">
-                                15.3M
-                            </p>
-                            {renderVariationBadge(2.1, 'up')}
-                        </div>
-                    </div>
-                    <div className="bg-brand-800/50 backdrop-blur-sm p-2 rounded-lg border border-[#cb3cff]/50">
-                        <div className="flex gap-1">
-                            {['Sem', 'Mois', 'Année'].map((p) => (
-                                <button
-                                    key={p}
-                                    type="button"
-                                    onClick={() => handleLineChartPeriodChange(p)}
-                                    className={`
+          {/* LineChart pour la tendance hebdomadaire */}
+          <div className="relative mt-20">
+            <div className="flex items-start justify-between mb-2">
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center gap-2">
+                  <i className="fas fa-chart-line text-sm text-gray-300 dark:text-card-text" />
+                  <h3 className="text-xs font-medium text-gray-500 dark:text-card-text">
+                    Paiements
+                  </h3>
+                </div>
+                <div className="flex items-center gap-2">
+                  <p className="text-lg font-semibold text-gray-900 dark:text-white">
+                    15.3M
+                  </p>
+                  {renderVariationBadge(2.1, 'up')}
+                </div>
+              </div>
+              <div className="bg-brand-800/50 backdrop-blur-sm p-2 rounded-lg border border-[#cb3cff]/50">
+                <div className="flex gap-1">
+                  {['Sem', 'Mois', 'Année'].map((p) => (
+                    <button
+                      key={p}
+                      type="button"
+                      onClick={() => handleLineChartPeriodChange(p)}
+                      className={`
                                         relative
                                         px-2 py-1 rounded-md
                                         text-[12px] font-medium
                                         transition-colors duration-100
                                         ${lineChartPeriod === p
-                                                                ? 'bg-[#cb3cff]/10 text-[#cb3cff]'
-                                                                : 'text-card-text'
-                                                            }
+                          ? 'bg-[#cb3cff]/10 text-[#cb3cff]'
+                          : 'text-card-text'
+                        }
                                         after:absolute
                                         after:inset-0
                                         after:rounded-md
@@ -323,16 +308,16 @@ export default function Dashboard({ filters, setFilters }) {
                                         after:pointer-events-none
                                         hover:text-[#cb3cff]
                                       `}
-                                >
-                                    {p}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
+                    >
+                      {p}
+                    </button>
+                  ))}
                 </div>
-
-                <LineChart data={lineChartData} />
+              </div>
             </div>
+
+            <LineChart data={lineChartData} />
+          </div>
         </div>
 
         <div className="w-[40%]">
@@ -344,12 +329,6 @@ export default function Dashboard({ filters, setFilters }) {
         <PieChartOffice filters={filters} setFilters={setFilters} />
         <PaymentTableCard />
       </div>
-
-      {/* <div>
-      <h1>Affichage des résultats SQL</h1>
-      <DataComponentApi query="query" params={{ sql: sqlQuery }} />
-    </div> */}
-
     </main>
   )
 }
